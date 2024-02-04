@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	  <title>Java script</title>
+	</head>	
+	<body>
+		
+		<h1>Hello Javascript</h1>
+		<h3>start form Js output</h3>
+		
+				<!--Display start-->
+				<p id="demo"></p>
+				
+				<script>
+				document.getElementById("demo").innerHTML = 5 + 6;
+				document.write(6+6);
+				</script>
+				
+				<br><br>
+				
+				<button type="button" onclick="document.write(8 + 8)">result</button>
+				<br><br>
+				<button type="button" onclick="window.print()">print this page</button>
+				<!--Display end-->
+				
+				<br><br>
+							<!--Statement start-->
+							<p id="demo1"></p>
+							<script>
+								var x,y,z;
+								x = 5;
+								y = 10;
+								z = x + y;
+								
+								document.getElementById("demo1").innerHTML = "The value of z is " +z+ ".";
+							</script>
+							
+							<!--Statement end-->
+							
+							<br>
+							
+									<!--Function call start-->
+									<button type="button" onclick="function1()">Click Me!</button>
+									<p id="demo2"></p>
+									<p id="demo3"></p>
+									
+									<br>
+									
+									<p id="demo4"></p>
+									<button onclick="function2()">result</button>																											
+									<!--Function call end-->
+					<br><br>
+									
+					<p id="demo5"></p>
+					<script>
+					  let person = "Ibrahim Khan", house = "Gulbagh", number = "017";
+					  document.getElementById("demo5").innerHTML = person + "<br>" + house + "<br>" + number;
+					</script>
+					
+					<br>
+			<h2>Javascript Constant array change element.</h2>		
+			<p id="demo6"></p>
+			<script>
+			  const cars = ["Saab", "Volvo", "BMW"];
+			  cars[1] = "Toyota";
+			  cars.push("Audi");
+			  
+			  document.getElementById("demo6").innerHTML = cars;
+			</script>
+	<!--oparator start-->
+	<h2>Using Oparator</h2>
+	<p id="demo7"></p>
+	<script>
+	  let text1,text2,result;
+	  text1 = "A";
+	  text2 = "B";
+	  result = text1 < text2;
+	  document.getElementById("demo7").innerHTML = 
+	  "Is A less than B ?" + "<br>" + result;
+	</script>
+	<br>
+	<p id = "demo8"></p>
+	<script>
+	  let text3;
+	  text3 = "What a very ";
+	  text3 += "nice day.";
+	  document.getElementById("demo8").innerHTML = text3;
+	</script>
+	<!--oparator end-->
+	<br><br>
+					<!--Data type start-->
+					<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+					<p style="text-decoration:underline"> And Boolean</p>	
+					<p id="demo9"></p>
+					<script>
+					  let x1 = 16 + "Volbo";
+					  let x2 = "Volbo" + 16;
+					  let x3 = 4 + 16 + "Volbo";
+					  let x4 = "Volbo" + 16 + 4;
+					  const person1 = {fname: " Ibrahim ", lname: " Khan ", age:28, ecolor: " black "};
+					  
+					  document.getElementById("demo9").innerHTML = x1 + "<br>" + "<br>" + x2 + "<br>" + "<br>" + x3 + "<br>" + "<br>" + x4 + 
+					  "<br>" + "<br>" + (x1 == x2) + "<br>" + "<br>" + (x2 == x3) + "<br>" + "<br>" + person1.fname + person1.lname +
+					  " is " + person1.age + " years old. ";
+					</script>					
+															
+					<!--Data type end-->
+				
+								<!--Function start-->
+								<p id = "demo10"></p>								
+								
+								<p id = "demo11">Call a function that converts from Fahrenheit to Celsius.</p>
+								
+								<!--Function end-->
+								
+											<!--Object start-->
+											<p id="demo12"></p>
+											<script>
+												const person2 = {
+												fname1 : "Ibrahim ",
+												lname1 : "Khan",
+												id1 : "01742"
+												};
+												document.getElementById ("demo12").innerHTML = 
+												person2.fname1 + " " + person2["lname1"] + " " + person2.id1;
+											</script>
+											
+											<p id="demo13"></p>
+											<script>
+												const person3 = {
+												fname2 : "Ibrahim ",
+												lname2 : "Khan",
+												id2 : "01742",
+												fullname : function function3(){
+												return this.fname2 + " " + this.lname2;
+												}														
+												};		
+												document.getElementById ("demo13").innerHTML = person3.fullname();
+											</script>											
+											
+											<!--Object end-->
+											
+			<!--Onclick attribute start-->
+			<h2>Onclick attribute</h2>
+			  <p id = "demo14"></p>
+			    <button type ="button" onclick = "document.getElementById('demo14').innerHTML =Date()">The time is?</button>
+			      <br><br>
+			        <button onclick = "this.innerHTML=Date()">The time is?</button>
+			      <br><br>			
+			    <button onclick="function5()">The time is?</button>
+			  <p id="demo15"></p>
+			<!--Onclick attribute end-->
+			
+				<p>Text length</p>
+				<p id = "demo16"></p>
+				  <script>
+				    let text = "A quick brown fox jumps over the lazy dog.";					
+					document.getElementById ('demo16').innerHTML = text.length;			  
+				  </script>
+				  
+						<p>Use backslash, single quotes and double quotes in sentence. </p>
+						  <p id = "demo17"></p>
+						    <script>
+							  let text4 = "A quick brown fox \"jumps\" over 'the' lazy \\ dog."
+							  document.getElementById ('demo17').innerHTML = text4;
+							</script>
+							
+								<p>Compare string and object like as boolean.</p>
+								  <p id = "demo18"></p>
+								    <script>
+									  let text5 = "Jhon";
+									  let text6 = new String("Jhon");
+										document.getElementById ('demo18').innerHTML = (text5 == text6);
+									</script>
+									
+										<p>Javascript character code.</p>
+										  <p id = "demo19"></p>
+										    <script>
+											  let text7 = "Hello World";
+											  document.getElementById ('demo19').innerHTML = text7.charAt(0);
+											</script>
+											
+									<p>Javascript character code.</p>
+									  <p id = "demo19"></p>
+										 <script>
+										   let text8 = "Hello World";
+										   document.getElementById ('demo19').innerHTML = text8.charCodeAt(2);
+										  </script>
+										  
+								<p>User at() method.</p>
+								  <p id = "demo20"></p>
+								    <script>
+									  const name = "Ibrahim Khan";
+									  let letter = name.at(2);
+									  document.getElementById ('demo20').innerHTML = letter;
+									</script>
+									
+							<p>The slice() method.</p>
+							 <p id = "demo21"></p>
+							   <script>
+							     let text9 = "Mango, Banana, Orange";
+								 let part = text9.slice(15,21);
+								 document.getElementById('demo21').innerHTML = part;
+							   </script>
+							   
+							   
+					<p id = "demo22"></p>
+					  <script>
+					    let text10 = "Mango, Banana, Orange";
+						  let part1 = text10.slice(15);
+						   let part2 = text10.slice(-14);
+						  let part3 = text10.slice(-14,-8);
+						document.getElementById('demo22').innerHTML = part1 +"<br>"+ part2+"<br>"+ part3;
+					  </script>
+					  
+			<p>Convert string to Upper case and to lower case.</p>		  			  
+			  <button onclick = "function6()">Try it</button>
+			<p id = "demo23">Hello World!</p>			
+			   <button onclick = "function7()">Try it</button>
+			<p id = "demo24">Hello World!</p>
+			
+<p>concat() method two or more string join.</p>
+<p id = "demo25"></p>
+  <script>
+    let text13 = "Hello";
+	  let text14 = "World";
+	  let text15 = text13.concat(" ",text14);
+	document.getElementById('demo25').innerHTML = text15;
+  </script>
+  
+  <p>Javascript repeat</p>
+    <p>Looping Array Element</p>
+	  <p id = "demo26"></p>
+	    <p>Lopping Array Element with function call</p>
+		  <p id = "demo27"></p>
+		    <p>The push() method add a new element in array.</p>
+			  <button onclick="function9()">Try it</button>
+		        <p id = "demo28"></p>
+				  <p>Use cancat() method for using marge new array element</p>
+				    <p id = "demo29"></p>
+							
+							
+				
+		
+		<script src="script.js"></script>	
+	</body>
+</html>
