@@ -171,6 +171,41 @@ function function13(){
 								txt += value.name + " " + value.price + "<br>";
 							  }
 							   document.getElementById('demo48').innerHTML = txt;
+
+							     const number8 = [10,20,30,5,15,40];
+								   let text22 = " ";
+								     number8.forEach(function16);
+									  document.getElementById('demo49').innerHTML = number8;
+									   document.getElementById('demo50').innerHTML = text22;
+									     function function16(value){
+										   text22 += value * 2 + "<br>";
+										 }
+										      document.getElementById('demo51').innerHTML = number8;
+											    const number9 = number8.map(function17);
+												  document.getElementById('demo52').innerHTML = number9;
+												    function function17(value){
+													  return value * 2;
+													}
+													    document.getElementById('demo53').innerHTML = number8;
+														  let number10 = number8.filter(function18);
+														    document.getElementById('demo54').innerHTML = number10;
+															  function function18 (value){
+																return value > 20;
+															  }
+															       document.getElementById('demo55').innerHTML ="The aray number is: " + number8;
+																     const number11 = number8.reduce(function19);																   
+																	   document.getElementById('demo56').innerHTML ="The sum is: " + number11;
+																	     function function19(total,value){
+																			return total + value;
+																		 }
+																		      const number12 = number8.reduce(function20,100);
+																			   document.getElementById('demo57').innerHTML ="The sum is: " + number12;
+																			    function function20(total,value){
+																					return total + value;
+																				}
+																	   
+
+										       
 	  
 									
 											     
