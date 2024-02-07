@@ -203,6 +203,13 @@ function function13(){
 																			    function function20(total,value){
 																					return total + value;
 																				}
+																		    
+																				document.getElementById('demo58').innerHTML = number8;
+																			  let allover20 = number8.every(function21);
+																			document.getElementById('demo59').innerHTML = "All over 20 : "+allover20;
+																		  function function21 (value){
+																			return value > 20;
+																		  }
 																	   
 
 										       
