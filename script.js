@@ -210,6 +210,26 @@ function function13(){
 																		  function function21 (value){
 																			return value > 20;
 																		  }
+																	 let someover20 = number8.some(function22);
+																   document.getElementById('demo60').innerHTML = "Some over 20 : " + someover20;
+																function function22 (value){
+																	return value > 20;
+																}
+															document.getElementById('demo61').innerHTML = fruits2;
+														  const keys = fruits2.keys();
+														let text23 = "";
+													  for (let x of keys) {
+														text23 += x + "<br>";
+													  }
+												  document.getElementById('demo62').innerHTML = text23;
+
+												const text24 = fruits2.entries();
+											  for(let x of text24){
+												document.getElementById('demo63').innerHTML += x + "<br>";
+											  }
+										 const months1 = ["January", "February", "April", "May"];
+									   const months2 = months1.with(2, "March");
+									 document.getElementById('demo64').innerHTML = months2;
 																	   
 
 										       
