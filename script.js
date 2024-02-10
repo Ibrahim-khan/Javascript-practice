@@ -230,6 +230,8 @@ function function13(){
 										 const months1 = ["January", "February", "April", "May"];
 									   const months2 = months1.with(2, "March");
 									 document.getElementById('demo64').innerHTML = months2;
+								  const d = new Date();
+								document.getElementById('demo65').innerHTML = d;
 																	   
 
 										       
