@@ -1,5 +1,7 @@
 console.log(5+5);
 
+				document.getElementById("demo").innerHTML = 5 + 6;
+
 function function1(){
 	document.getElementById("demo2").innerHTML = "Hi Ibrahim";
 	document.getElementById("demo3").innerHTML = "How are you?";
@@ -232,6 +234,28 @@ function function13(){
 									 document.getElementById('demo64').innerHTML = months2;
 								  const d = new Date();
 								document.getElementById('demo65').innerHTML = d;
+							  const d1 = new Date("2023-01-02");
+							document.getElementById("demo66").innerHTML = d1.getFullYear();
+						  document.getElementById("demo67").innerHTML ="getMonth: " + (d.getMonth() + 1)+","+" " + "getDate: "+ d.getDate()
+						    +","+ " " + "getHours: " +d.getHours()+","+" "+"getMinuts: "+d.getMinutes()
+							+","+" "+"getSeconds"+d.getSeconds()+","+" "+"getMilisonds: "+d.getMilliseconds()+";"+"<br>"
+							+"getDay: "+ d.getDay();
+					const Months3 = ["January","February","March","April","May","June","July","August","September","October",
+						                 "November","December"];
+				 const month = Months3[d.getMonth()];
+			   document.getElementById('demo68').innerHTML = month;
+			 const days = ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"];
+		   const day = days[d.getDay()];
+		 document.getElementById("demo69").innerHTML = day;
+	   document.getElementById("demo70").innerHTML = Math.PI;
+	document.getElementById("demo71").innerHTML = "Math.round(4.4, 4.5): "+ Math.round(4.4) + ", " + Math.round(4.6) + "<br>" +
+	  "Math.ceil(4.4): " + Math.ceil(4.4) + "<br>" + "Math.floor(4.7): " + Math.floor(4.7)+"<br>"+ "Math.trunc(4.7): " + Math.trunc(4.7)+
+	  "<br>" + "Math.sign(4): " + Math.sign(4)+"<br>"+"Math.pow(8,2): "+Math.pow(8,2)+"<br>"+"Math.sqrt(64): "+Math.sqrt(64)+
+	  "<br>" + "Math.abs(-4.7): "+Math.abs(-4.7)+"<br>"+"The sine value is 90 degrees is: "+Math.sin(90 * Math.PI/180)+
+	  "<br>" + "The cosine value of 0 degrees is: "+Math.cos(0 * Math.PI / 180)+"<br>"+"Height value is a list of argument: "+
+	  Math.max(0,30,100,150,-40,-200)+"<br>"+"Lowest value is a list of argument: "+Math.min(0,30,100,150,-40,-200)+"<br>"+
+	  "Math.log(0): "+ Math.log(0)+"<br>"+"Math.log(1): "+ Math.log(1)+"<br>"+"Math.log(2): "+ Math.log(2)+"<br>"+"Math.log(10): "+
+	  Math.log(10)+"<br>"+"Math.log10(1000): "+Math.log10(1000);
 																	   
 
 										       
