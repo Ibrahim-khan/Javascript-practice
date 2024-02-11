@@ -256,6 +256,12 @@ function function13(){
 	  Math.max(0,30,100,150,-40,-200)+"<br>"+"Lowest value is a list of argument: "+Math.min(0,30,100,150,-40,-200)+"<br>"+
 	  "Math.log(0): "+ Math.log(0)+"<br>"+"Math.log(1): "+ Math.log(1)+"<br>"+"Math.log(2): "+ Math.log(2)+"<br>"+"Math.log(10): "+
 	  Math.log(10)+"<br>"+"Math.log10(1000): "+Math.log10(1000);
+       
+	     function function14(){
+			let age = document.getElementById('age').value;
+			let voteable = (age < 18) ? "Not enough" : "Perfect";
+			document.getElementById('demo72').innerHTML = voteable + " too vote.";
+		 }
 																	   
 
 										       
