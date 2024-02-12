@@ -262,6 +262,92 @@ function function13(){
 			let voteable = (age < 18) ? "Not enough" : "Perfect";
 			document.getElementById('demo72').innerHTML = voteable + " too vote.";
 		 }
+		       let day1;
+			   switch (new Date().getDay()){
+				case 0:
+					day1 = "Sunday";
+					break;
+
+					case 1:
+						day1 = "Monday";
+						break;
+
+						case 2: 
+						    day1 = "Tuesday";
+							break;
+
+							case 3:
+								day1 = "Wednesday";
+								break;
+
+						case 4:
+							day1 = "Thursday";
+							break;
+
+					case 5:
+						day1 = "Friday";
+						break;
+
+				case 6:
+					day1 = "Saturday";
+					break;
+			   }
+		document.getElementById('demo73').innerHTML = "Today is " + day1;
+		  let day2;
+		   switch (new Date().getDay()){
+			case 0:
+			case 6:
+				day2 = "This is weekend";
+				break;
+				
+				case 3:
+				case 4:
+					day2 = "This is middle week";
+
+			default:
+				day2 = "Looking forward to the weekend";
+		   }
+		   document.getElementById('demo74').innerHTML = day2;
+		    const cars2 = ["BMW","TATA","TOYOTA","MAHINDRA","FORD","VOLVO"];
+			 let text25 = "";
+			  for(let i = 0; i<cars2.length; i++){
+				text25 = text25 + cars2[i] + "<br>";
+			  }
+			      document.getElementById('demo75').innerHTML = text25;
+				   const person4 = {fname: "Ibrahim", lname: "Khan", age:27};
+				     let number13 = [10,20,30,40,50,60];
+					   let text26 = "";
+					     let text27 = "";
+					     for(let x in person4){
+							text26 += person4[x] + " ";
+						 }
+						   for(let x in number13){
+							text27 += number13[x] + ", ";
+						   }
+						       document.getElementById('demo76').innerHTML = text26 +"<br><br>"+ text27;
+							    let text28 = "";
+								for(let x of cars2){
+									text28 += x + ", ";
+								}
+								      document.getElementById('demo77').innerHTML = text28;
+									    let text29 = "";
+										 let i = 0;
+										  while( i < 10){
+											text29 += "the number is: " + i + "<br>";
+											i++;
+										  }
+										      document.getElementById('demo78').innerHTML = text29;
+
+											    let text30 = "";
+												let j = 0;
+												 do{
+													text30 += "The number is: " + j + "<br>";
+													 j++;
+												 }
+												      while(j<10);
+												      document.getElementById('demo79').innerHTML = text30;
+					  
+
 																	   
 
 										       
