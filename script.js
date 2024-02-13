@@ -345,18 +345,67 @@ function function13(){
 													 j++;
 												 }
 												      while(j<10);
-												      document.getElementById('demo79').innerHTML = text30;
-					  
+												       document.getElementById('demo79').innerHTML = text30;
+													    let text31 = "";
+														  for(i = 0; i<10; i++){
+															if(i===3){break;}
+															text31 += "The number is: " + i + "<br>";
+														  }
 
-																	   
+														      document.getElementById('demo80').innerHTML = text31;
+															const name5 =  "W3schools";
+														   let text32 = "";
+														  for(let x of name5){
+															text32 += x + "<br>";
+														  }
+														document.getElementById('demo81').innerHTML = text32;
+													  const letter2 = ["a","b","c"];
+													let text33 = "";
+												  for (let x of letter2){
+													text33+= x + ", ";
+												  }
+												document.getElementById('demo82').innerHTML = text33;
+											  const letter3 = (["a","b","c"]);
+											let text34 = "";
+										  for (let x of letter3){
+											text34+= x + ", ";
+										  }
+									document.getElementById('demo83').innerHTML = text34 +"<br>"+ "Text size: " + letter3.length;
+								  const fruits3 = ([
+									["Apple",500],
+									["Banana",300],
+									["Mango",200],
+								  ]);
+							let text35 = "";
+						  for(let x of fruits3){
+							text35+= x + "<br>";
+						  }
+					  document.getElementById('demo84').innerHTML = text35;
+					  const letter4 = new Set(["a","b","c"]);					 
+				  letter4.add("d");
+				  letter4.add("e");
+				let text36 = "";
+				for(const x of letter4.values()){
+					text36+= x + ", ";
+				}
+			document.getElementById('demo85').innerHTML ="Text size: "+ letter4.size + "<br>"+"Text is: "+text36;
+		const fruits4 = new Map([
+			["Apple",500],
+			["Banana",300],
+			["Mango",200],
+		]);
+		fruits4.set("Apple",400);
+document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get("Apple")+"<br>"+"fruits4.size: "+fruits4.size+
+"<br>"+"fruits4.has(apples): "+fruits4.has("Apple");
 
-										       
-	  
-									
-											     
-
-
-
-
-
-
+		const fruits5 = new Map([
+			["Apple",500],
+			["Banana",300],
+			["Mango",200]
+		]);
+		  let text37 = "";
+		   fruits5.forEach (function(value, key){
+			 text37+= key + ' = ' + value + "<br>"
+		   })
+		     document.getElementById('demo87').innerHTML = text37;
+														  
