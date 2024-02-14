@@ -421,4 +421,34 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 			   "function(){} is: " + typeof function(){} + "<br>" +
 			   "myCar is: " + typeof myCar + "<br>" +
 			   "null is: " + typeof null;
- 														  
+
+			      document.getElementById('demo89').innerHTML = "100 + 50 * 3 = " + (100 + 50 * 3) + "<br>" +
+				    "(100 + 50) * 3 = " + (100 + 50) * 3 + "<br>" +
+					"100 / 50 * 3 = " + 100 / 50 * 3;
+					  
+					   try{
+						adddlert ("Welcome JavaScript");
+					   }
+					     catch(err){
+							document.getElementById('demo90').innerHTML = err.message;
+						 }
+ 							
+						      function function23(){
+								const message = document.getElementById('demo92');
+								message.innerHTML = "";
+								let x = document.getElementById('demo91').value;
+								  
+								   try{
+									if (x == "") throw "empty";
+									if (isNaN(x)) throw "not a number";
+									x = Number(x);
+									if(x<5) throw "too low";
+									if(x>10) throw "too high";
+								   }
+											catch (err){
+												message.innerHTML = "Input is " + err;
+											}
+
+							        }
+
+													
