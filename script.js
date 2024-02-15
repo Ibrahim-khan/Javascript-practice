@@ -412,14 +412,14 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 			   document.getElementById('demo88').innerHTML = 
 			    
 			   "'Ibrahim' is: " + typeof "Ibrahim" + "<br>" +
-			   "3.14 is: " + typeof 3.14 + "<br>" +
-			   "NaN is: " + typeof NaN + "<br>" +
-			   "false is: " + typeof false + "<br>" +
-			   "[1,2,3,4] is: " + typeof [1,2,3,4] + "<br>" +
-			   "{fname: 'Ibrahim', age: 27} is: " + typeof {fname:'Ibrahim', age:27} + "<br>" +
-			   "new Date() is: " + typeof new Date() + "<br>" +
-			   "function(){} is: " + typeof function(){} + "<br>" +
-			   "myCar is: " + typeof myCar + "<br>" +
+			     "3.14 is: " + typeof 3.14 + "<br>" +
+			  	   "NaN is: " + typeof NaN + "<br>" +
+			  		 "false is: " + typeof false + "<br>" +
+			  		   "[1,2,3,4] is: " + typeof [1,2,3,4] + "<br>" +
+			   			"{fname: 'Ibrahim', age: 27} is: " + typeof {fname:'Ibrahim', age:27} + "<br>" +
+			  		 "new Date() is: " + typeof new Date() + "<br>" +
+			  	   "function(){} is: " + typeof function(){} + "<br>" +
+			     "myCar is: " + typeof myCar + "<br>" +
 			   "null is: " + typeof null;
 
 			      document.getElementById('demo89').innerHTML = "100 + 50 * 3 = " + (100 + 50 * 3) + "<br>" +
@@ -450,5 +450,40 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 											}
 
 							        }
+												  var x20 = 5;
+												   var x21 = 7;
+												    var x22;
+												     elem = document.getElementById("demo93");
+													  elem.innerHTML = x20 + "<br>" + x21 +"<br>"+ x22;
+													     x22 = 8;
+														   const person5 = {
+															   fname: "Ibrahim",
+															   lname: "Khan",
+															   age: 27,
+															   fullname: function(){
+																	return this.fname + " " + this.lname;
+															   }
+														   };
+														         document.getElementById('demo94').innerHTML = person5.fullname();
+														
+															const person6 = {
+																fullname(){
+																	return this.fname + " " + this.lname; 
+																}
+															}
+														const person7 = {
+															fname: "Ibrahim",
+															lname: "khan",
+														}
+													let x23 = person6.fullname.call(person7);
+												document.getElementById('demo95').innerHTML = x23;
+											  let function24 = (a , b) => a * b;
+											document.getElementById('demo96').innerHTML = function24 (5 , 6);
+										  let hello = "";
+										hello = () => {
+											return "Hello World!";
+										}
+									document.getElementById("demo97").innerHTML = hello();
+											
 
-													
+
