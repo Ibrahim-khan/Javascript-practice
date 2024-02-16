@@ -484,6 +484,33 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 											return "Hello World!";
 										}
 									document.getElementById("demo97").innerHTML = hello();
+								  class car3 {
+									constructor(name6, year) {
+										this.name = name6;
+										this.year = year;
+									}
+								  }
+							const myCar1 = new car3 ("Ford", 2014);
+						  const myCar2 = new car3 ("Volvo", 2020);
+						document.getElementById("demo98").innerHTML = myCar1.name + " " + myCar2.name;
+					class Car4 {
+						constructor(name, year) {
+							this.name = name;
+							this.year = year;
+						}					
+			  age() {
+				const date = new Date();
+			    return date.getFullYear() - this.year;
+			  }
+			}
+			  const myCar3 = new Car4 ("BMW", 2010);
+		  document.getElementById("demo99").innerHTML = "My car is " + myCar3.age() + " years old";
+		let text38 = "{'employess':[" +
+	"{'fname': 'Ibrahim', 'lname':'khan'}," + 
+	"{'fname': 'Shihab', 'lname':'khan'}," +
+	"{'fname': 'Salman', 'lname': 'khan'}]}";
+const obj = JSON.parse(text38);
+document.getElementById('demo100').innerHTML = obj.employess[1].fname + " " + obj.employess[1].lname;
 											
 
 
