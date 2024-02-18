@@ -501,10 +501,90 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 	    the latest best practices for you seasoned web developer.";
 
 		  let matchs = sentence.match(/sumit/ig);
+		    let length1 = matchs ? matchs.length : "Not found";
+			 let position2 = sentence.search(/sumit/i);
+			   position2 =  position2 >= 0 ? position2 : "Not Found";
 
-		  document.getElementById('demo100').innerHTML = matchs;
+		          document.getElementById('demo100').innerHTML = length1 + "<br>" +   matchs + "<br>" + "First position: " + position2;
+					  function linearSearch (arr, val){
+						let length2 = arr.length;
+						  for(let i = 0; i<length2; i++ ){
+							if (arr[i] === val){
+								return i;
+								}
+								  }
+						         return "not found";
+								  }
+									 console.log(linearSearch(['a', 'b', 'c', 'd', 'c'], 'c'));
 
-		
+								  	//১ - ১০০ পর্যন্ত কোন সংখ্যা গুলো ৩,৫ এবং ৩ ও ৫ উভয় সংখ্যা দ্বারা বিভাজ্য। 
+									  /*	function fizzBuzz(number) {
+										for(let i = 1; i <= number; i++) {
+										  if(i % 15 === 0) {
+											console.log(`${i} is FizzBuzz`);
+											  } else if(i % 3 === 0){
+												  console.log(`${i} is Fizz`);
+												    }else if(i % 3 === 0){
+													  console.log(`${i} is Buzz`);
+													    } else {
+														  console.log(i);
+															}
+														 	}
+												             }
+														    	fizzBuzz(100); */
+																  const mixedArr = [
+																	"lws",
+																	   undefined,
+																	     "learn With Sumit",
+																		   false,
+																		     "",
+																			  "apple",
+																			    40,
+																				  "k",
+																				    true,
+																					  "Thanks all",
+																					    NaN
+																  ];
+																  						  const trueArray = mixedArr.filter(function(el){
+																							if(el) {
+																								return true;
+																							} else {
+																								return false;
+																							}
+																						  });
+																						 const trueArray1 = mixedArr.filter(Boolean);
+																						document.getElementById('demo101').innerHTML =
+																					  "Use Function(): " + trueArray + "<br>" + "Use Boolean: " + trueArray1;
+																					const obj = {
+																						a: "lws",
+																						b: undefined,
+																						c: "learn With Sumit",
+																						d: false,
+																						e: "",
+																						f: "apple",
+																						g: 40,
+																						h: "k",
+																						i: true,
+																						j: "Thanks all",
+																						k: NaN
+																					};
+																			/*		
+																			const truthyObject = function (obj){
+																		for(let i in obj){
+																		  if (!obj[i])  {
+																			delete obj[i];
+																		  }
+																		}
+
+																		  return obj;
+																			}  
+																console.log(truthyObject(obj)); */
+																
+																
+															
+
+															
+									 
 											
 
 
