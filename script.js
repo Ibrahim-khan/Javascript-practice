@@ -579,7 +579,55 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 																		  return obj;
 																			}  
 																console.log(truthyObject(obj)); */
-																
+															let person8 = {
+																fname: "Ibrahim",
+																lname: "Khan",
+																age: 27,
+																edu: "BSc in CSE",
+																ins: {
+																dip: "DPI",
+																bsc: "NUB",
+																voc: "D N"
+																}
+															};
+														let x24 = person8;
+														x24.age = 28;
+
+													  let text38 = "";
+													for(let x25 in person8){
+														text38 += person8[x25] + " ";
+													}
+												document.getElementById('demo103').innerHTML = person8.age + "<br>" + text38 + "<br>" +
+												  "Access nested object" + "<br>" + person8.ins.bsc;
+
+											let x26 = "";
+											let person9 = {
+												fname: "Ibrahim",
+												lname: "Khan",
+												age  : 27,
+												cars : [
+													{name: "Ford", models:["Fiesta", "Focus", "Mustang"]},
+													{name: "BMW",  models:["320", "X3", "X5"]},
+													{name: "Fiat", models:["500", "Panda"]}
+												]
+											};
+									for(let i in person9.cars){
+										x26 += "<h2>" + person9.cars[i].name + "</h2>";
+										for(let j in person9.cars[i].models){
+											x26 += person9.cars[i].models[j] + "<br>";
+										}
+									};
+							document.getElementById('demo104').innerHTML = x26;
+				
+					let person10 = {
+						fname: "Ibrahim",
+						lname: "Khan",
+						age  : 27,
+						fullname: function(){
+							return (this.fname + " " + this.lname).toUpperCase();
+						}
+					}; 
+		document.getElementById('demo105').innerHTML = "My name is " + person10.fullname();
 																
 															
 
