@@ -628,6 +628,59 @@ document.getElementById('demo86').innerHTML ="fruits4.set(Apple): "+ fruits4.get
 						}
 					}; 
 		document.getElementById('demo105').innerHTML = "My name is " + person10.fullname();
+	let person11 = {
+		fname: "Ibrahim",
+		lname: "Khan",
+		language : "Bangla",
+		   get lang(){
+			return this.language;
+		   },
+
+		language1: "NO",
+		set lang1(value){
+			this.language1 = value.toUpperCase();
+		},
+
+		get fullname(){
+			return this.fname + " " + this.lname.toUpperCase();
+		}
+	};
+	person11.lang1 = "English";
+document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11.language1 + "<br>" + person11.fullname;
+  //Define an Object
+  let obj1 = {counter : 0};
+
+    //Define getters and setters
+    Object.defineProperty(obj1, "reset", {
+		get : function () {this.counter = 0;}
+	});
+	      Object.defineProperty(obj1, "increment", {
+			get : function () {this.counter++; }
+		  });
+
+		      Object.defineProperty(obj1, "decrement", {
+				get : function () {this.counter--;}
+			  });
+
+			      Object.defineProperty(obj1, "add", {
+					set : function (value) {this.counter += value;}
+				  });
+
+				       Object.defineProperty(obj1, "subtract", {
+						  set : function (value) {this.counter -= value;}
+					   });
+					     
+					        //Play with counter
+							 obj1.reset;
+							  obj1.add = 5;
+							    obj1.subtract = 1;
+								  obj1.increment;
+								    obj1.decrement;
+									  document.getElementById('demo107').innerHTML = obj1.counter;
+							    
+
+			     
+			      
 																
 															
 
