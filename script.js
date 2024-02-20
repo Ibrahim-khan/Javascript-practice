@@ -677,6 +677,37 @@ document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11
 								  obj1.increment;
 								    obj1.decrement;
 									  document.getElementById('demo107').innerHTML = obj1.counter;
+
+									  let letter5 = new Set(["a","b","c"]);
+									    // Add a new Element
+									      letter5.add("d");
+									        letter5.add("e");								  
+											  // Display set.size
+												  document.getElementById("demo108").innerHTML = letter5.size;
+												    
+												     let letter6 = new Set();
+													   letter6.add("a");
+													     letter6.add("b");
+														   letter6.add("c");
+														     letter6.add("c");
+															   letter6.add("c");
+															     letter6.add("c");
+																   document.getElementById('demo109').innerHTML = letter6.size;
+																      
+																      let letter7 = new Set(["a","b","c","d"]);
+																	    let text39 = "";
+																		  letter7.forEach (function(value){
+																			text39+= value + "<br>";
+																		  })
+																		       document.getElementById('demo110').innerHTML = text39;
+																			     
+																			       let letter8 = new Set(["I","b","r","a","h","i","m"]);
+																				     let text40 = "";
+																					   for(let x of letter8.values()){
+																						text40+= x + "<br>";
+																					   } 
+																					       document.getElementById('demo111').innerHTML = text40;
+																						
 							    
 
 			     
