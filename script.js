@@ -707,6 +707,12 @@ document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11
 																						text40+= x + "<br>";
 																					   } 
 																					       document.getElementById('demo111').innerHTML = text40;
+																						const fruits6 =new Map ([
+																							["Apple", 500],
+																							["Mango", 400],
+																							["Banana", 300]
+																						]);
+																					document.getElementById('demo112').innerHTML = fruits6.get("Apple");
 																						
 							    
 
