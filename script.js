@@ -707,13 +707,21 @@ document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11
 																						text40+= x + "<br>";
 																					   } 
 																					       document.getElementById('demo111').innerHTML = text40;
-																						const fruits6 =new Map ([
+																						let fruits6 =new Map ([
 																							["Apple", 500],
 																							["Mango", 400],
 																							["Banana", 300]
 																						]);
-																					document.getElementById('demo112').innerHTML = fruits6.get("Apple");
-																						
+																						fruits6.set("Orange", 200);
+																					document.getElementById('demo112').innerHTML = 
+																					fruits6.get("Apple") + "<br>" +
+																					fruits6.get("Orange") + "<br>" + "Fruits size: " + 
+																					fruits6.size;
+																				let text41 = "";
+																			fruits6.forEach(function(value, key) {
+																				text41 += key + ' = ' + value + "<br>";
+																			})
+																		document.getElementById('demo113').innerHTML = text41;		
 							    
 
 			     
