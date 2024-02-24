@@ -722,7 +722,12 @@ document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11
 																				text41 += key + ' = ' + value + "<br>";
 																			})
 																		document.getElementById('demo113').innerHTML = text41;		
-							    
+																	  let x27 = function25(4,5);
+																		document.getElementById('demo114').innerHTML = x27;
+																	  
+																	function function25(a,b){
+																		return a * b;
+																	}
 
 			     
 			      
