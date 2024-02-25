@@ -722,12 +722,77 @@ document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11
 																				text41 += key + ' = ' + value + "<br>";
 																			})
 																		document.getElementById('demo113').innerHTML = text41;		
-																	  let x27 = function25(4,5);
+																	  let x27 = function25(4,5)*2;
 																		document.getElementById('demo114').innerHTML = x27;
 																	  
 																	function function25(a,b){
 																		return a * b;
 																	}
+																(function () {
+																	document.getElementById('demo115').innerHTML = "Hello! I called myself.";
+																})();
+															function function26(a,b){
+																return arguments.length;
+															}
+														  document.getElementById("demo116").innerHTML = function26(4,5) + "<br>" + function26.toString();
+
+														function function27(x,y){
+															if (y=== undefined){
+																y = 2;
+															}
+														    return x * y;
+														}
+													document.getElementById("demo117").innerHTML = function27(5);
+												  
+												function findMax(){
+													let max = -Infinity;
+													for(let i = 0; i < arguments.length; i++){
+														if(arguments[i] > max){
+															max = arguments[i];
+														}
+													}
+													return max;
+												}
+
+												let x28 = findMax(3,5,2);
+											
+											document.getElementById('demo118').innerHTML ="Largest number is (3,5,2): " +  x
+
+										function sumAll(){
+											let sum = 0;
+											for(let i = 0; i < arguments.length; i ++){
+												sum+= arguments[i];
+											}
+											return sum;
+										}
+										let suma = sumAll(10,20,30,40);													
+									document.getElementById('demo119').innerHTML ="sum of all number is: " + suma;
+
+								let object1 = {
+									fname: "Ibrahim",
+									lname: "Khan",
+									fullname: function(){
+										return this.fname + " " + this.lname;
+									}
+								};
+								document.getElementById('demo120').innerHTML = object1.fullname();
+
+							let person12 = {
+								fullname: function(city, country){
+									return this.fname + " " + this.lname + ", " + city + ", " + country;
+								}
+							}
+							
+							let person13 = {
+								fname: "Ibrahim",
+								lname: "Khan"
+							}
+
+							let person14 = {
+								fname: "Shihab",
+								lname: "Khan"
+							}
+							document.getElementById('demo121').innerHTML = person12.fullname.call(person14, "Dhaka", "Bangladesh");
 
 			     
 			      
