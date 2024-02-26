@@ -792,7 +792,43 @@ document.getElementById('demo106').innerHTML = person11.lang + "<br>" + person11
 								fname: "Shihab",
 								lname: "Khan"
 							}
-							document.getElementById('demo121').innerHTML = person12.fullname.call(person14, "Dhaka", "Bangladesh");
+						let a = 4;
+					  document.getElementById('demo121').innerHTML = person12.fullname.call(person14, "Dhaka", "Bangladesh") + "<br>" +
+					"<br>" + a * a;
+				let counter1 = 0;
+			  function add(){
+				
+				counter1 += 1;
+			  }
+
+			add();
+			add();
+			add();
+		document.getElementById('demo122').innerHTML = "The couter is: " + counter1;
+	
+	function add(){
+		let counter2 = 0;
+		counter2 += 1;
+		return counter2;
+	}
+
+	function function28(){
+		document.getElementById('demo123').innerHTML = add();
+	}
+
+const add1 = (function(){
+	let counter3 = 0;
+	return function() {
+		counter3 += 1;
+		return counter3;
+	}
+}) ();
+
+function function29(){
+	document.getElementById('demo124').innerHTML = add1();
+}
+
+					
 
 			     
 			      
