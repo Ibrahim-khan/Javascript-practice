@@ -827,6 +827,69 @@ const add1 = (function(){
 function function29(){
 	document.getElementById('demo124').innerHTML = add1();
 }
+  class car {
+	constructor(name,year){
+		this.name = name;
+		this.year = year;
+	}
+
+			age(){
+				const date = new Date();
+				  return date.getFullYear() - this.year;
+			}
+  }
+						let myCar3 = new car("Ford", 2014);
+						 let myCar4 = new car("Audi", 2019);
+
+						   document.getElementById('demo125').innerHTML = myCar3.name + " is " + myCar3.age() + " years old." + 
+						   "<br>" + myCar4.name;
+						     
+						      class acar {
+								constructor(brand){
+									this.carname = brand;
+								}
+									   present(){
+										return 'I have a ' + this.carname;
+									   }
+							  }
+							  			    class Model extends acar {
+												constructor(brand, mod){
+													super(brand);
+													  this.model = mod;
+												}
+												     show(){
+														return this.present() + ' , it is a ' + this.model; 
+													 }
+											}
+
+															let myCar5 = new Model("Ford", "Mustang");
+															  document.getElementById('demo126').innerHTML = myCar5.show();
+
+															    class bcar{
+																	constructor(brand){
+																		this.carname = brand;
+																	}
+																	       get cnam(){
+																			return this.carname;
+																		   }
+																		        set cnam(x){
+																					this.carname = x;
+																				}
+																}
+																					const myCar6 = new bcar("Ford");
+																					  document.getElementById('demo127').innerHTML = myCar6.cnam;
+																					
+																				class ccar{
+																					constructor(name){
+																						this.name = name;
+																					}
+																			  static hello(x){
+																				return "Hello " + x.name;
+																			  }
+																				}
+																		const myCar7 = new ccar("Ford");
+																	document.getElementById('demo128').innerHTML = ccar.hello(myCar7);
+			    
 
 					
 
