@@ -890,6 +890,7 @@ function function29(){
 																		const myCar7 = new ccar("Ford");
 																	document.getElementById('demo128').innerHTML = ccar.hello(myCar7);
 
+																				//JavaScript Callback start
 																  function myDisplayer (some){
 																	document.getElementById('demo129').innerHTML = some;
 																  }
@@ -898,9 +899,83 @@ function function29(){
 																}
 															  function mySecond(){
 																myDisplayer("Goodbye");
-															  }
-															myFirst();
+															  }															
 															mySecond();
+															myFirst();
+
+														  
+														  function myDisplayer1(some){
+															document.getElementById('demo130').innerHTML = some;
+														  }
+
+														function myCalculator(num1, num2){
+														  let sum = num1 + num2;
+														  myDisplayer1(sum);
+														}
+													  myCalculator(5,5);	
+													
+												function myDisplayer2(something){
+													document.getElementById("demo131").innerHTML = something;
+												}
+											  function myCalculator1 (num1, num2, myCallback){
+												let sum = num1 + num2;
+												myCallback(sum);
+											  }
+											myCalculator1(10,10, myDisplayer2);
+										
+										function asynchronous(){
+											document.getElementById('demo132').innerHTML = "I love Islam.";
+										}
+									  setTimeout(asynchronous, 2000);
+
+										//set Interval
+									setInterval(asynchronous1, 1000);
+								  function asynchronous1(){
+									let d = new Date();
+
+									document.getElementById('demo133').innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+								  }
+							  
+								  //Promises
+								  
+							  const paymentSuccess = true;
+							  const marks = 85;
+							function enroll(callback){
+								console.log('Course enrollment is in progress.');
+
+						  setTimeout (function(){
+							if(paymentSuccess){
+								callback();
+							} else{
+								console.log('Payment failed');
+							}
+						  }, 1000);
+							}
+						function progress(callback){
+							console.log('Course on progress...');
+
+							setTimeout(function(){
+								if(marks >= 80){
+									callback();
+								} else {
+									console.log('You could not get enough marks to get the certificate')
+								}
+							}, 2000);
+						}
+
+					function getCertificate(){
+						console.log('Preparing you certificate!');
+
+						setTimeout (function(){
+							console.log("Congrats! ");
+						}, 1500);
+					}
+				enroll(function(){
+					progress(getCertificate);
+				})
+				
+
+													
 			    
 
 					
