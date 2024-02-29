@@ -889,6 +889,18 @@ function function29(){
 																				}
 																		const myCar7 = new ccar("Ford");
 																	document.getElementById('demo128').innerHTML = ccar.hello(myCar7);
+
+																  function myDisplayer (some){
+																	document.getElementById('demo129').innerHTML = some;
+																  }
+																function myFirst(){
+																	myDisplayer("Hello");
+																}
+															  function mySecond(){
+																myDisplayer("Goodbye");
+															  }
+															myFirst();
+															mySecond();
 			    
 
 					
