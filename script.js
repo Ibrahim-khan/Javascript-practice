@@ -928,7 +928,7 @@ function function29(){
 										}
 									  setTimeout(asynchronous, 2000);
 
-										//set Interval
+										//set Interval Timer
 									setInterval(asynchronous1, 1000);
 								  function asynchronous1(){
 									let d = new Date();
@@ -973,6 +973,24 @@ function function29(){
 				enroll(function(){
 					progress(getCertificate);
 				})
+		const element = document.getElementById("intro");
+	  const element1 = element.getElementsByTagName("p");
+
+	document.getElementById("demo134").innerHTML = "Fitst paragraph Intro (index 0) is: " + element1[0].innerHTML;
+
+  const element2 = document.querySelectorAll("p.intro1");
+document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].innerHTML;
+
+//Document Form
+  const form = document.forms["form1"];
+    let text42 = "";
+	  for(let i = 0; i<form.length; i++){
+		text42 += form.elements[i].value + "<br>";
+		  }
+		    document.getElementById("demo136").innerHTML = text42;
+
+			  document.getElementById('image').src = "biospray.png";
+    
 				
 
 													
