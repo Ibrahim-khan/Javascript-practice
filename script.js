@@ -990,6 +990,14 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 		    document.getElementById("demo136").innerHTML = text42;
 
 			  document.getElementById('image').src = "biospray.png";
+
+			    function validateform(){
+					let x = document.forms["myform"] ["fname"].value;
+					if (x == ""){
+						alert ("Name must be filled out");
+						return false;
+					}
+				}
     
 				
 
