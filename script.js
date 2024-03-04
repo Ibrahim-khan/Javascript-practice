@@ -998,6 +998,37 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 						return false;
 					}
 				}
+				             function validation1(){
+								let x = document.getElementById("numb").value;
+								  let text = "";
+								    if(isNaN(x) || x < 1 || x > 10){
+										text = "Input not valid";
+									} 
+									      else {
+											text = "Input  Ok";
+										  }
+										       document.getElementById("demo137").innerHTML = text;
+											   
+							 }
+
+													document.getElementById('css').style.color = "red";
+													  document.getElementById('css').style.fontSize = "30px";
+
+													    function mymove(){													
+															  let pos = 0;
+															    const animate = document.querySelector(".animated");
+																  const interval = setInterval(frame, 5);
+
+																     function frame(){
+																		if (pos < 350){
+																			pos++;
+																			animate.style.top = pos + 'px';
+																			animate.style.left = pos + 'px';
+																		} else {
+																			clearInterval(interval);
+																		}
+																	 }
+														}
     
 				
 
