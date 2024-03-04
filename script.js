@@ -1029,8 +1029,67 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 																		}
 																	 }
 														}
-    
-				
+																					function   changeText(){
+																						document.querySelector('#cText');
+																						cText.innerHTML = "Hello World";
+																					}
+
+																						function displayDate(){
+																							document.querySelector('time1');
+																							time1.innerHTML = Date();
+																						}
+
+																						         function upperCase(){
+																									const x = document.getElementById('fname3');
+																									  x.value =x.value.toUpperCase();
+																								 }
+
+																											function upperCase1(){
+																												const x = document.querySelector('#fname4');
+																												x.value =x.value.toUpperCase();
+																											}
+
+																										function mOver(obj){
+																											obj.innerHTML = "Thank You"
+																										}
+
+																									function mOut(obj) {
+																										obj.innerHTML = "Mouse Over Me"
+																									}
+
+																								document.querySelector('#btime').addEventListener('click', displayDate);
+																							function displayDate(){
+																								document.querySelector('#demo138').innerHTML = Date();
+																							}
+																						document.querySelector('#alert').addEventListener('click', function(){
+																							alert('Hello World');
+																						})
+																					
+																					let x29 = document.querySelector('#alert1');
+																					 x29.addEventListener('click', onealert);
+																					 x29.addEventListener('click', secondalert);
+																				
+																					function onealert(){
+																						alert('Hello World');
+																					}
+																				function secondalert(){
+																					alert('Second Alert');
+																				}
+
+																			let x30 = document.querySelector('#myBtn');
+																		  x30.addEventListener('mouseover', functionfirst);
+																		  x30.addEventListener('click', functionsecond);
+																		  x30.addEventListener('mouseout', functionthird);
+
+																	function functionfirst(){
+																		document.getElementById('demo139').innerHTML += "Mouse Over <br>";																		
+																	}
+																function functionsecond(){
+																	document.getElementById('demo139').innerHTML += "Clicked <br>";
+																}
+															function functionthird(){
+																document.getElementById('demo139').innerHTML += "Mouse Out <br>";
+															}
 
 													
 			    
