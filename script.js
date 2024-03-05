@@ -1090,6 +1090,36 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 															function functionthird(){
 																document.getElementById('demo139').innerHTML += "Mouse Out <br>";
 															}
+														
+														const para = document.createElement("p");
+														const node = document.createTextNode("This is new.");
+													para.appendChild(node);
+
+												  const element3 = document.getElementById("div1");
+												element3.appendChild(para);
+
+											const para1 = document.createElement("p");
+											const node1 = document.createTextNode("This is new 1");
+										  para1.appendChild(node1);
+
+										const element4 = document.getElementById("div2");
+										const child = document.getElementById("p3");
+										element4.insertBefore(para1, child);
+
+									function remove(){
+										document.getElementById("p3").remove();
+									}
+
+										const myCollection = document.getElementsByTagName("p");
+										  document.getElementById("demo140").innerHTML = "The element of the second paragraph is: " + myCollection[1].innerHTML;
+										    function function30(){
+												const function30 = document.getElementsByTagName("p");
+												  for(let i = 0; i < myCollection.length; i++){
+													myCollection[i].style.color = "red";
+												  }
+											}
+
+
 
 													
 			    
