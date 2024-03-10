@@ -1118,6 +1118,9 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 													myCollection[i].style.color = "red";
 												  }
 											}
+											            document.getElementById('demo140').innerHTML = 
+														  "Browser inner window width: " + innerWidth + "px<br>" +
+														  "Browser inner window height: " + innerHeight + "px"; 
 
 
 
