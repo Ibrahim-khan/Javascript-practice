@@ -1,3 +1,4 @@
+
 console.log(5+5);
 
 				document.getElementById("demo").innerHTML = 5 + 6;
@@ -1120,8 +1121,34 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 											}
 											            document.getElementById('demo140').innerHTML = 
 														  "Browser inner window width: " + innerWidth + "px<br>" +
-														  "Browser inner window height: " + innerHeight + "px"; 
+														  "Browser inner window height: " + innerHeight + "px" + "<br>" + 
+														  "The full URL of this page: " + window.location.href + "<br>" + 
+														  "Window hostname: " + window.location.hostname + "<br>" + 
+														  "Window pathname: " + window.location.pathname + "<br>" + "Navigator.appCodeName is: " +
+														  navigator.appCodeName +"<br>" + "Navigator product is: " + navigator.product + "<br>" +
+														  "navigator app version: " + navigator.appVersion + "<br>" + 
+														  "navigator platform: " + navigator.platform; 
+														    														      
+														     let myWindow;
 
+																function windowOpen(){
+																	myWindow = window.open('https://google.com');
+																}
+																	function windowClose(){
+																		myWindow.close();
+																	}
+
+																			function newDoc(){
+																				window.location.assign("https://www.facebook.com");
+																			}
+
+																					function back(){
+																						history.back();
+																					}
+
+																					      function forward(){
+																							history.forward();
+																						  }
 
 
 													
