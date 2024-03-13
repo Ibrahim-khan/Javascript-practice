@@ -1150,6 +1150,58 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 																							history.forward();
 																						  }
 
+																										function alert1(){
+																											var text43;
+																											if(confirm("Press a button!")){
+																												text43 = "You press Ok!";
+																											} else {
+																												text43 = "You press cancel";
+																											}
+																											document.getElementById('demo141').innerHTML = text43;
+																										}
+
+																								function alert(){
+																									let text;
+																									let person = prompt("Please enter your name:", "Khan");
+																									if(person == null || person == ""){
+																										text = "User cancelled the prompt.";
+																									} else {
+																										text = "Hello " + person + " , How are you ?";
+																									}
+																									document.getElementById('demo142').innerHTML = text;
+																								}
+
+																					setInterval(myTimer, 1000);
+																					function myTimer(){
+																						const d = new Date();
+																						document.getElementById("demo143").innerHTML = d.toLocaleTimeString();
+																					}
+
+																			const x31 = document.getElementById('demo144');
+																		  function getLocation(){
+																			try{
+																				navigator.geolocation.getCurrentPosition(showPosition);
+																			} catch{
+																				x31.innerHTML = err;
+																			}
+																		  }
+
+																	function showPosition(position){
+																		x31.innerHTML = position.coords.latitude + position.coords.longitude; 
+																	}
+
+															function inputObj(){
+																const inputObj1 = document.getElementById('id3');
+																if(!inputObj1.checkValidity()){
+																	document.getElementById('demo145').innerHTML = inputObj1.validationMessage;
+
+																}else{
+																	document.getElementById("demo145").innerHTML = "Input OK";
+																}
+															}
+
+																							
+
 
 													
 			    
