@@ -1187,7 +1187,7 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 																		  }
 
 																	function showPosition(position){
-																		x31.innerHTML = position.coords.latitude + position.coords.longitude; 
+																		x31.innerHTML = position.coords.latitude +"<br>" + position.coords.longitude; 
 																	}
 
 															function inputObj(){
@@ -1199,6 +1199,41 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 																	document.getElementById("demo145").innerHTML = "Input OK";
 																}
 															}
+													let w;
+												  function startWorker(){
+													if(typeof(w) == "undefined"){
+														w = new Worker("demo_workers.js");
+													}
+													w.onmessage = function(event){
+														document.getElementById('result').innerHTML = event.data;
+													};
+													
+													}
+													function stopWorker(){
+														w.terminate();
+														w = undefined;
+												  }
+									const display = document.getElementById('display');
+
+									function getData(){
+										fetch('https://www.biosprayplus.org/contact.html')
+										  .then((res) => res.text())
+										  .then((data) => {
+											display.innerText = data;
+										  });
+									}
+
+
+
+									function loadDoc() {
+										const xhttp = new XMLHttpRequest();
+										xhttp.onload = function() {
+										  document.getElementById("demo146").innerHTML =
+										  this.responseText;
+										}
+										xhttp.open("GET", "ajax_info.txt");
+										xhttp.send();
+									  }
 
 																							
 
