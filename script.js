@@ -1235,6 +1235,15 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 										xhttp.send();
 									  }
 
+			function loadDoc1(){
+				const xhttp = new XMLHttpRequest();
+				xhttp.onload = function(){
+					document.getElementById('demo147').innerHTML = this.responseText;
+				}
+				xhttp.open("GET", "demo_get.asp");
+				xhttp.send();
+			}
+
 																							
 
 
