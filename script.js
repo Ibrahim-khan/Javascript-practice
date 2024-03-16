@@ -1240,7 +1240,7 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 				xhttp.onload = function(){
 					document.getElementById('demo147').innerHTML = this.responseText;
 				}
-				xhttp.open("GET", "demo_get.asp");
+				xhttp.open("GET", "demo_get.asp?fname=Ibrahim&lname=Khan");
 				xhttp.send();
 			}
 
