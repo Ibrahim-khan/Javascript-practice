@@ -1244,6 +1244,68 @@ document.getElementById('demo135').innerHTML = "index(0) is : " + element2[0].in
 				xhttp.send();
 			}
 
+					let json = {name: "John", age: 30, today: new Date(), city: "Dhaka"};
+					  json.name = "Ibrahim";
+					    json["age"] = 27;
+
+						  let json1 = JSON.stringify(json);
+						    document.getElementById('demo148').innerHTML = json1;
+
+							  let text44 = '{"fname" : "Ibrahim", "lname" : "Khan", "age" : 27, "city" : "Dhaka", "birth" : "1996-07-06"}'							   
+							    let myObj = JSON.parse(text44);
+								 myObj.birth = new Date(myObj.birth);
+
+								   let mybirth = JSON.parse(text44, function(key, value){
+									if(key == "birth"){
+										return new Date(value);
+									}else{
+										return value;
+									}
+								   });
+								  
+										let text45 = '["Ibrahim", "Khan", 27, "Dhaka"]'
+										 let myObj1 = JSON.parse(text45);								  
+										  document.getElementById('demo149').innerHTML = myObj.fname + " " + myObj.lname + " , " + myObj.birth + 
+										   "<br>" + mybirth.birth + "<br>" + myObj1[2];
+
+								   			  //Storing data:
+											    localStorage.setItem("testJSON", json1);
+
+												//Retrieving data:
+												let text46 = localStorage.getItem("testJSON");
+												  let obj2 = JSON.parse(text46);
+													document.getElementById('demo150').innerHTML = obj2.name;
+
+													   let myJson = '{"Name" : "Ibrahim", "Age" : 27, "Car" : "Null"}'
+													     let myObj2 = JSON.parse(myJson);
+
+														   let text47 = "";
+														    let text48 = "";
+														     for (const x in myObj2){
+																text47 += x + " , ";
+																text48 += myObj2[x] + " , ";
+															 }
+															      document.getElementById('demo151').innerHTML =myJson + "<br>" + "<br>" + 
+																  "Looping Object Propertics: " + text47 + "<br>" + 
+																  "Looping Object value: " + text48;
+
+																      const dbParam = JSON.stringify({table: "customers", limit:20});
+																	   const xmlhttp = new XMLHttpRequest();
+																	    xmlhttp.onload = function(){
+																			const myObj3 = JSON.parse(this.responseText);
+																			 let text49 = "<table border='1'>"
+																			  for(let x in myObj3){
+																				text49 += "<tr><td>" + myObj3[x].name + "<tr><td>";
+																			  }
+																			       text49 += "</table>"
+																				     document.getElementById('demo152').innerHTML = text49;
+																		}
+
+																		                  xmlhttp.open("POST", "json_demo_html_table.txt");
+																						   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+																						    xmlhttp.send("x = " + dbParam);
+
+
 																							
 
 
